@@ -1,7 +1,19 @@
 # TFM_bioinformatica
 La instalación del software ExpHunter Suite se realizó creando un nuevo directorio y clonando el repositorio de Github en el de la siguiente forma:
 
-      mkdir ExpHunter
-      cd Exphunter
+      mkdir installed_software
+      cd installed_software
       git clone https://github.com/seoanezonjic/ExpHunterSuite.git
-      
+
+Y se añade la ruta al archivo .bashrc:
+
+      export
+      PATH=/home/user/installed_software/ExpHunterSuite/inst/scripts:$PATH
+
+De esta forma, se instala la versión mas actualizada y disponible del software. Sin embargo, la instalación en este caso necesito de la instalación 
+de ciertas dependencias de manera manual en la terminal de ubuntu. Asímismo, los dependencias libharfbuzz-dev libfribidi-dev
+libfreetype6-dev 0libpng-dev libtiff5-dev y libjpeg-dev se instalaron ejecutando la siguiente linea de código:
+
+      sudo apt-get install libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+
+Una vez, instaladas las dependencias se va abre la consola de R dentro de la carpeta donde se clonó el repositorio de Gitnhub        
