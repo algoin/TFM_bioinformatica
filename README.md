@@ -1,3 +1,4 @@
+
 # TFM_bioinformatica
 La ejecución del análisis de expresión diferencial y el enriquecimiento funcional por parte de ExpHunter Suite realizada en este trabajo viene descrito en el archivo launch.sh. Para llevarlo a cabo, se abre una terminal de linux y se ejecuta precedido de "./". El contenido de este archivo es el siguiente:
 
