@@ -7,6 +7,7 @@ La ejecución del análisis de expresión diferencial y el enriquecimiento funci
       functional_Hunter.R -i $results_folder -t E -c 6 -o $results_folder/functional_enrichment -m Human
 
 El análisis de expresión diferencial se lleva a cabo a través de la función degenes_Hunter.R, mientras que el enriquecimiento funcional se lleva a cabo a través de la función functional_Hunter.R. Además, para realizar el enriquecimiento funcional primero se carga los archivos de la base de datos KEGG, para poder basar el análisis en esta base de datos.
+
 El caso que se muestra en el archivo launch.sh es una comparación general que enfrenta todos los controles frente a todos los pacientes. De manera que la función degenes_Hunter.R cambia su parámetro -t para cada una del resto de comparaciones.
 
 
