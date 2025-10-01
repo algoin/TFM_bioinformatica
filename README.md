@@ -16,6 +16,34 @@ El caso que se muestra en el archivo launch.sh es una comparación general que e
 
 La ejecución del análisis integrativo se lleva a cabo a través del archivo daemon.sh. Este se ejecuta en una terminal de linux precedido de "./". Este archivo descarga el interactoma humano de string, prepara un diccionario que relaciona los códigos ENSP con los códigos ENSG y finalmente crea todas las variables necesarias para usar una plantilla de autoflow (gestor de flujos de trabajo) que tiene las tareas para hacer el análisis integrativo (redes). Esta plantilla es el archivo template.af que se encuentra dentro del directorio template.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Por otro lado, durante la instalación de la herramienta ExpHunter Suite surgieron varios problemas En primer lugar,La instalación del software ExpHunter Suite se realizó creando un nuevo directorio y clonando el repositorio de Github en el de la siguiente forma:
+
+      mkdir installed_software
+      cd installed_software
+      git clone https://github.com/seoanezonjic/ExpHunterSuite.git
+
+Y se añade la ruta al archivo .bashrc:
+
+      export
+      PATH=/home/user/installed_software/ExpHunterSuite/inst/scripts:$PATH
+
+De esta forma, se instala la versión más actualizada y disponible del software. En este punto, surgieron problemas en la instalación de de ciertas dependencias de manera que se realizó su instalación manual con la siguiente línea de código:
+
+      sudo apt-get install libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+
+Además, se instaló manualmente las librerías devstool y htmlreportR junto con sus dependencias, abriendo la consola de R en el directorio donde se había clonado el repositorio de GitHub:
+      
+      install.packages("devtools")
+      devtools::install_deps()
+      devtools::install_github("https://github.com/AEstebanMar/htmlreportR")
+
+Para comprobar la correcta instalación del software se usó la ayuda deel comando del análisis de expresión diferencial (degenes_Hunter.R --help).
+Sin embargo, la terminal mostraba un mensaje de error porque algunos paquetes no se habían instalado correctamente, por lo que se instalaron de
+manera manual abriendo la consola de R en este mismo directorio y usando install.packages("").
+
+
 
 
 
