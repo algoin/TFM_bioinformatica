@@ -13,6 +13,6 @@ análisis, y results_folder contiene la ruta al directorio donde se va a generar
 
 El caso que se muestra en el archivo launch.sh es una comparación general que enfrenta todos los controles frente a todos los pacientes. De manera que la función degenes_Hunter.R cambia su parámetro -t para cada una del resto de comparaciones.
 
-La ejecución del análisis integrativo se lleva a cabo a través del archivo daemon.sh. Este se ejecuta en una terminal de linux precedido de "./". Este archivo tiene 
+La ejecución del análisis integrativo se lleva a cabo a través del archivo daemon.sh. Este se ejecuta en una terminal de linux precedido de "./". Este archivo descarga el interactoma humano de string y prepara 
 
 
